@@ -1,0 +1,5 @@
+[
+    {"_id": "56cdbbf087cf99674a99da7f", "updatedAt": "2016-02-24T14:19:28.140Z", "name": "Camel", "description": "undefined", "type": "image/jpeg", "fileName": "1-15020G00321619.jpg", "size": 76020, "width": 804, "height": 1005, "variations": [
+        {"label": "thumb", "size": 7236, "width": 160, "height": 200, "_id": "56cdbbf087cf99674a99da80"}
+    ], "createdAt": "2016-02-23T22:15:22.810Z", "tags": []}
+]

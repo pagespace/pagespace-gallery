@@ -1,0 +1,33 @@
+{
+  "name": "pagespace-gallery",
+  "version": "0.1.0",
+  "description": "Gallery plugin for Pagespace",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pagespace/pagespace-gallery"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node standalone",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Phil Mander",
+  "license": "MIT",
+  "devDependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "gulp-util": "^3.0.7",
+    "serve-favicon": "^2.3.0"
+  },
+  "keywords": [
+    "pagespace-plugin"
+  ],
+  "pagespace": {
+    "schema": {
+      "type": "object",
+      "title": "Gallery",
+      "properties": {}
+    }
+  }
+}
