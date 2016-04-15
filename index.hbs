@@ -1,7 +1,27 @@
-<div class="pagespace-gallery">
+<div class="pagespace-gallery" id="{{_id}}">
     {{#each images}}
         <div class="gallery-item">
-            <img src="/_media/{{this.fileName}}?label=thumb">
+            <a href="/_media/{{this.fileName}}?label=large">
+                <img src="/_media/{{this.fileName}}?label=thumb" alt="{{this.name}}">
+            </a>
         </div>
     {{/each}}
 </div>
+
+<script>
+    (function() {
+        if(!window.pagespace) {
+            var link = document.createElement("link");
+            link.href = '/_static/plugins/pagespace-gallery/view/gallery.css';
+            link.type = 'text/css';
+            link.rel = 'stylesheet';
+            document.head.appendChild(link);
+
+            var script = document.createElement("script");
+            script.onload = function() { pagespace.gallery('{{_id}}'); };
+            script.onerror = function() { console.warn('Cannot find gallery script') };
+            script.src = '/_static/plugins/pagespace-gallery/view/gallery.js';
+            document.head.appendChild(script);
+        }
+    })();
+</script>

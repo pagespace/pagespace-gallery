@@ -294,7 +294,7 @@
                 
                 return (
                     <li>
-                        <img src={`http://localhost:9999/_media/${this.props.image.fileName}?label=thumb`}
+                        <img src={`/_media/${this.props.image.fileName}?label=thumb`}
                              draggable="draggable"
                              onDragStart={dragStart}
                              onDragEnter={dragEnter}

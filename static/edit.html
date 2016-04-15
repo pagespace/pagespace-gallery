@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagespace Gallery</title>
+        <link href="/_static/plugins/pagespace-gallery/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <style>
+            .header {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 52px;
+                background: #dcdcdc;
+                padding: 10px;
+            }
+            .header button {
+                float: right;
+            }
+
+            .image-lists {
+                position: absolute;
+                top: 52px;
+                bottom: 0;
+                width: 100%;
+                background: #EFEFEF;
+             }
+             .image-list ul {
+                 padding: 0;
+             }
+            .image-list li {
+                float: left;
+                position: relative;
+                margin: 10px;
+                padding: 10px;
+                list-style: none;
+            }
+            .image-list .selected {
+                background-color: #233b59;
+            }
+            .image-list img {
+                max-width: 100px;
+                max-height: 100px;
+            }
+
+            .image-list {
+                position: absolute;
+                height: 50%;
+                width: 100%;
+                padding: 10px;
+                overflow: auto;
+            }
+            .media-library {
+                top: 0;
+            }
+            .media-library img {
+                cursor: pointer;
+            }
+            .selected-images {
+                top: 50%;
+            }
+            .selected-images .remove-image {
+                display: none;
+                position: absolute;
+                top: 10px;
+                right: 0;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+            .selected-images li:hover .remove-image {
+                display: block;
+            }
+
+            .swap-ready {
+                outline: 4px solid #233b59;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="header" class="header">
+            <!--Save button-->
+        </div>
+
+        <div class="image-lists">
+            <div class="media-library image-list clearfix">
+                <h3>Available images</h3>
+                <div id="gallery-available">
+                    <!-- media library -->
+                </div>
+            </div>
+
+            <div class="selected-images image-list clearfix">
+                <h3>Selected for gallery</h3>
+                <div id="gallery-selected">
+                    <!-- selected images -->
+                </div>
+            </div>
+        </div>
+
+        <script src="/_static/plugins/pagespace-gallery/edit/pagespace-stub.js"></script>
+        <script src="/_static/plugins/pagespace-gallery/node_modules/redux/dist/redux.js"></script>
+        <script src="/_static/plugins/pagespace-gallery/node_modules/react/dist/react.js"></script>
+        <script src="/_static/plugins/pagespace-gallery/node_modules/react-dom/dist/react-dom.js"></script>
+        <script src="/_static/plugins/pagespace-gallery/edit/dist/index.js"></script>
+    </body>
+</html>
