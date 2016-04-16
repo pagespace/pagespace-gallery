@@ -31,3 +31,9 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+
+# static dependencies
+!node_modules/bootstrap/dist/css/bootstrap.min.css
+!node_modules/redux/dist/redux.js
+!node_modules/react/dist/react.js
+!node_modules/react-dom/dist/react-dom.js
