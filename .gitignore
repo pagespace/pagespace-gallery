@@ -1,3 +1,5 @@
+.idea
+
 # Logs
 logs
 *.log
@@ -24,7 +26,7 @@ coverage
 build/Release
 
 # Dependency directory
-node_modules
+node_modulesst
 
 # Optional npm cache directory
 .npm
@@ -33,7 +35,7 @@ node_modules
 .node_repl_history
 
 # static dependencies
-!node_modules/bootstrap/dist/css/bootstrap.min.css
-!node_modules/redux/dist/redux.js
-!node_modules/react/dist/react.js
-!node_modules/react-dom/dist/react-dom.js
+!static/node_modules/bootstrap/dist/css/bootstrap.min.css
+!static/node_modules/redux/dist/redux.js
+!static/node_modules/react/dist/react.js
+!static/node_modules/react-dom/dist/react-dom.js
