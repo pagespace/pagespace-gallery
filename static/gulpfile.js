@@ -1,21 +1,24 @@
 var gulp = require('gulp');
-var babel = require('gulp-babel');
+var browserify = require('browserify');
+var source = require('vinyl-source-stream');
 var gutil = require('gulp-util');
 
-gulp.task('jsx', function() {
-    return gulp.src('edit/src/**/*.jsx')
-        .pipe(babel({
-            presets: ['react']
-        }))
+gulp.task('browserify', function () {
+
+
+    return browserify(['edit/src/index.js'])
+        .transform('babelify', { presets: ['react'] })
+        .bundle()
+        .pipe(source('pagespace-gallery.js'))
         .pipe(gulp.dest('edit/dist'));
 });
 
-gulp.task('default', [ 'jsx' ], function() {
+gulp.task('default', [ 'browserify' ], function() {
 
 });
 
-gulp.task('watch', [ 'jsx' ], function() {
-    gulp.watch('edit/src/**/*.jsx', ['jsx']).on('error', gutil.log);
+gulp.task('watch', [ 'browserify' ], function() {
+    gulp.watch('edit/src/**/*.js', ['browserify']).on('error', gutil.log);
 });
 
 

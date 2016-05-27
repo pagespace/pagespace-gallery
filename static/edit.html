@@ -3,6 +3,7 @@
     <head>
         <title>Pagespace Gallery</title>
         <link href="/_static/plugins/pagespace-gallery/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link href="/_static/plugins/pagespace-gallery/node_modules/react-select/dist/react-select.css" type="text/css" rel="stylesheet">
         <style>
             .header {
                 position: absolute;
@@ -32,9 +33,11 @@
                 margin: 10px;
                 padding: 10px;
                 list-style: none;
+                min-height: 120px;
             }
-            .image-list .selected {
-                background-color: #233b59;
+            .image-list .selected img {
+                outline-style: solid;
+                outline-width: 8px;
             }
             .image-list img {
                 max-width: 100px;
@@ -56,6 +59,7 @@
             }
             .selected-images {
                 top: 50%;
+                border-top: 3px solid #D7DADE;
             }
             .selected-images .remove-image {
                 display: none;
@@ -78,7 +82,8 @@
     </head>
     <body>
         <div id="header" class="header">
-            <!--Save button-->
+            <div id="tags" class="pull-left" style="width: 500px;"></div>
+            <div id="save" class="pull-right"></div>
         </div>
 
         <div class="image-lists">
@@ -98,9 +103,6 @@
         </div>
 
         <script src="/_static/plugins/pagespace-gallery/edit/pagespace-stub.js"></script>
-        <script src="/_static/plugins/pagespace-gallery/node_modules/redux/dist/redux.js"></script>
-        <script src="/_static/plugins/pagespace-gallery/node_modules/react/dist/react.js"></script>
-        <script src="/_static/plugins/pagespace-gallery/node_modules/react-dom/dist/react-dom.js"></script>
-        <script src="/_static/plugins/pagespace-gallery/edit/dist/index.js"></script>
+        <script src="/_static/plugins/pagespace-gallery/edit/dist/pagespace-gallery.js"></script>
     </body>
 </html>

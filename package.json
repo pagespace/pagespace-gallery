@@ -18,7 +18,8 @@
     "express": "^4.13.3",
     "express-handlebars": "^2.0.1",
     "gulp-util": "^3.0.7",
-    "serve-favicon": "^2.3.0"
+    "serve-favicon": "^2.3.0",
+    "vinyl-transform": "^1.0.0"
   },
   "keywords": [
     "pagespace-plugin"
