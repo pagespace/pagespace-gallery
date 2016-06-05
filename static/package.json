@@ -25,9 +25,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "bundledDependencies": [
-    "redux",
-    "react",
-    "react-dom",
+    "react-select",
     "bootstrap"
   ]
 }

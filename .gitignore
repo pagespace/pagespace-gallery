@@ -38,6 +38,4 @@ build/Release
 # static dependencies
 /static/node_modules/**/*
 !/static/node_modules/bootstrap/dist/css/bootstrap.min.css
-!/static/node_modules/redux/dist/redux.js
-!/static/node_modules/react/dist/react.js
-!/static/node_modules/react-dom/dist/react-dom.js
+!/static/node_modules/react-select/dist/react-select.css

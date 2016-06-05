@@ -1,8 +1,11 @@
-.pagespace-gallery .gallery-item img {
+.pagespace-gallery .gallery-item {
     float: left;
     margin-right: 15px;
-    max-width: 100px;
-    max-height: 100px;
+    height: 135px;
+}
+.pagespace-gallery .gallery-item img {
+    max-width: 120px;
+    max-height: 120px;
 }
 .pagespace-gallery:after {
     content: "";
