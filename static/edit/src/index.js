@@ -9,6 +9,8 @@ renderAvailableImagesView(galleryModel);
 renderSelectedImagesView(galleryModel);
 galleryModel.start();
 
-window.pagespace.on('save', function () {
-    galleryModel.save();
+pagespace.on('save', function () {
+    galleryModel.save().then(function() {
+        pagespace.close();
+    });
 });

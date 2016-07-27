@@ -63,15 +63,9 @@ class GalleryModel extends ReduxWrapperModel {
                 delete image.selected;
                 return image;
             })
-        }).then(() => {
-            this.close();
         });
     }
-
-    close() {
-        pagespace.close();
-    }
-
+    
     start() {
         const allImages = fetch('/_api/media?type=' + encodeURIComponent('/^image/'), {
             credentials: 'same-origin',
