@@ -93,7 +93,7 @@ class GalleryModel extends ReduxWrapperModel {
 
         return Promise.all([allImages, pluginData]).then((values) => {
             this.load(values[0]);
-            this.selectImages(values[1].images);
+            this.selectImages(values[1].images || []);
         }).catch(function (err) {
             console.error(err);
         })
